@@ -1,0 +1,91 @@
+#footer {
+  padding-block: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    div {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-size: 30px;
+        color: rgb(61, 255, 116);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        font-family: serif;
+      }
+    }
+
+    .footerFirst {
+      width: 100%;
+      max-width: 383px;
+      gap: 25px;
+      p {
+        color: rgb(189, 189, 189);
+        font-size: 14px;
+        line-height: 2;
+      }
+      .icons {
+        display: grid;
+        grid-template-columns: repeat(7, 40px);
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+        .icon {
+          transition: 0.3s;
+          background-color: rgb(55, 55, 55);
+          border: 1px solid rgb(177, 177, 177);
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 40px;
+          &:hover {
+            border-color: rgb(61, 255, 116);
+            color: rgb(61, 255, 116);
+            box-shadow: 0 0 5px 2px;
+            transform: scale(1.1);
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+    .footerDiv {
+      width: 100%;
+      max-width: 200px;
+      h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+      .gradient_border {
+        width: 50px;
+        height: 2.5px;
+        border-radius: 2px;
+        background: linear-gradient(
+          to right,
+          rgb(61, 255, 116),
+          rgba(0, 0, 0, 0)
+        );
+        display: block;
+        margin-top: -5px;
+      }
+      ul {
+        list-style: none;
+        li {
+          line-height: 2;
+          font-size: 15px;
+          color: rgb(189, 189, 189);
+          transition: 0.3s;
+          &:hover {
+            list-style: disc;
+            color: rgb(61, 255, 116);
+            transform: translateX(7px);
+          }
+        }
+      }
+    }
+  }
+}

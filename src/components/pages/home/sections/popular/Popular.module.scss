@@ -1,0 +1,12 @@
+.popular {
+  padding-block: 20px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-block: 20px;
+    h2 {
+      font-size: 25px;
+    }
+  }
+}

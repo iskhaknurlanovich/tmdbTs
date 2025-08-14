@@ -1,0 +1,118 @@
+.actor {
+  padding: 70px 40px 20px;
+  .actorInfo {
+    display: flex;
+    gap: 50px;
+    img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      width: 350px;
+      height: 500px;
+      box-shadow: 0 0 10px 5px rgba(26, 19, 95, 0.337);
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 750px;
+      h3 {
+        font-weight: 200;
+      }
+      .biography {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        line-height: 20px;
+        h2 {
+          font-size: 30px;
+          font-weight: 200;
+        }
+        p {
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.807);
+          span {
+            margin-left: 10px;
+            color: rgb(100, 159, 196);
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+      .fameFor {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .fameForTop {
+          text-align: start;
+        }
+        .fameForList {
+          display: flex;
+          justify-content: flex-start;
+          gap: 20px;
+          overflow-x: scroll;
+          padding: 20px;
+          .actorMovie {
+            position: relative;
+            transition: 0.4s;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgb(0, 255, 42);
+
+            img {
+              width: 170px;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 10px;
+            }
+            &:hover {
+              transform: scale(1.05);
+              .modalInfo {
+                display: flex;
+              }
+            }
+            .modalInfo {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding: 10px;
+              background: rgba(0, 0, 0, 0.51);
+              width: 100%;
+              height: 100%;
+              display: none;
+              flex-direction: column;
+              gap: 10px;
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.746);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .actorBottom {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-block: 30px;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-block: 30px;
+    padding-left: 50px;
+    .div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      width: 100%;
+      max-width: 200px;
+      p {
+        color: rgba(255, 255, 255, 0.826);
+        font-weight: 400;
+      }
+    }
+  }
+}

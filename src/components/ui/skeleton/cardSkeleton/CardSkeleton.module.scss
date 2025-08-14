@@ -1,0 +1,12 @@
+.skeleton,
+.skeletonActor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skeletonActor {
+  align-items: center;
+  .first {
+    width: 200px;
+  }
+}

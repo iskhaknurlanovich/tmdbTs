@@ -1,0 +1,40 @@
+.carousel {
+  width: 100%;
+  position: relative;
+  min-height: 370px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  .wrapper {
+    position: relative;
+  }
+
+  .left {
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -20px;
+  }
+  .right {
+    transform: rotate(90deg);
+    top: 50%;
+    right: -20px;
+  }
+  .right,
+  .left {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.44);
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 35px;
+    transition: 0.2s;
+    &:hover {
+      background-color: rgba(128, 128, 128, 1);
+    }
+  }
+  .carouselItems {
+    display: flex;
+    padding-block: 20px;
+    gap: 25px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}

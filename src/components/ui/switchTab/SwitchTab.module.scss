@@ -1,0 +1,29 @@
+.switchTabs {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  button {
+    background: none;
+    border-bottom: 2px solid white;
+    border-top: white;
+    border-right: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white;
+    min-width: 80px;
+    border-radius: 20px 20px 20px 0;
+    transition: 0.4s ease-out;
+    &:hover {
+      border: 1px solid white;
+      border-bottom: 2px solid;
+    }
+  }
+  .active {
+    background-color: rgb(0, 154, 31);
+  }
+}

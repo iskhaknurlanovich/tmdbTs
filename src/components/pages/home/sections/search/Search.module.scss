@@ -1,0 +1,28 @@
+.search {
+  padding-block: 70px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(61, 255, 83), transparent) 1;
+    outline: none;
+    color: white;
+    width: 60%;
+    padding: 15px;
+    font-size: 20px;
+    &::placeholder {
+      color: white;
+    }
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 20px;
+    padding: 30px;
+  }
+}
